@@ -215,7 +215,7 @@ document:
 If the remaining context window (for an AI agent) becomes insufficient:
 
 - Stop immediately at a clean boundary.
-- Produce [`CONTINUATION.md`](CONTINUATION.md).
+- Produce a `CONTINUATION.md` at the repository root.
 - Summarize completed work.
 - List remaining documents.
 - List unresolved dependencies.
