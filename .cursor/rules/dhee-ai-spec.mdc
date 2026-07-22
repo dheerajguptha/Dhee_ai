@@ -1,0 +1,36 @@
+---
+description: Dhee_AI Engineering Constitution - binding rules for every coding agent and contributor
+alwaysApply: true
+---
+
+# Dhee_AI Engineering Constitution (binding)
+
+This repository IS the engineering constitution of Dhee_AI. The specification is the
+single source of truth. Read [ENGINEERING_CONSTITUTION.md](../../ENGINEERING_CONSTITUTION.md)
+and [CLAUDE.md](../../CLAUDE.md) before making any change.
+
+## Document precedence (highest wins)
+1. Engineering Constitution -> 2. Architecture -> 3. ADR Decisions -> 4. Product Requirements
+-> 5. Roadmap -> 6. Milestones -> 7. Implementation.
+Earlier documents win unless an ADR in `DECISIONS.md` explicitly supersedes them.
+
+## Non-negotiable rules
+- Never violate the Engineering Constitution or the architecture.
+- Implementation follows specification; specification never follows implementation.
+- No new behavior without first updating the relevant specification (Living Specification Rule).
+- No placeholder implementations where a practical one is possible.
+- Strict TypeScript, fully typed public APIs. No `any` in shipped code.
+- Every feature ships with tests (unit + integration + e2e where relevant) and documentation.
+- Respect module boundaries; never introduce cyclic dependencies.
+- Prefer composition over inheritance and interfaces over concrete implementations.
+- Never move files without updating every reference. Keep commits atomic.
+- Never duplicate business logic.
+
+## Before coding (autonomous workflow, never skipped)
+read specs -> plan -> verify dependencies -> check architecture boundaries -> validate
+against principles -> implement -> tests -> docs -> self-review -> verify Constitution compliance.
+
+## Definition of Done
+Spec updated, ADR added when required, docs complete, tests passing, API documented,
+security reviewed, performance evaluated, accessibility reviewed, backward compatibility
+verified, CI passing. Anything less is incomplete.

@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+.pnp.cjs
+.yarn/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.turbo/
+.svelte-kit/
+coverage/
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.secrets/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches
+.cache/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.vite/
+
+# Editors & OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+*.iml
+
+# Local Cursor/agent artifacts that should not be published
+.cursor/plans/
+
+# Test & tooling artifacts
+.nyc_output/
+playwright-report/
+test-results/
+
+# Container & infra local state
+.docker/
+*.local
